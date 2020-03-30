@@ -76,16 +76,17 @@ namespace SpecflowTutorial.Base
         {
             if (s == "Gidiş Bileti")
             {
-                
-                YearSelect(s, arr[2], "//*[@id='search-flight-datepicker-departure']/div/div[1]/div/div/span[2]");
-                MonthSelect(s, arr[1], "//*[@id='search-flight-datepicker-departure']/div/div[1]/div/div/span[1]");
-                DaySelect(s, arr[0], "//*[@id='search-flight-datepicker-departure']/div/div[1]//tbody//a");
+                //Gidiş bileti için Gün/Ay/Yıl seçimi...
+                YearSelect(s, arr[2], "#search-flight-datepicker-departure .ui-datepicker-group-first .ui-datepicker-year");
+                MonthSelect(s, arr[1], "#search-flight-datepicker-departure .ui-datepicker-group-first .ui-datepicker-month");
+                DaySelect(s, arr[0], "#search-flight-datepicker-departure .ui-datepicker-group-first tbody a");
             }
             else if (s == "Dönüş Bileti")
             {
-                YearSelect(s, arr[2], "//*[@id='search-flight-datepicker-arrival']/div/div[2]/div/div/span[2]");
-                MonthSelect(s, arr[1], "//*[@id='search-flight-datepicker-arrival']/div/div[2]/div/div/span[1]");
-                DaySelect(s, arr[0], "//*[@id='search-flight-datepicker-arrival']/div/div[2]//tbody//a");
+                //Dönüş bileti için Gün/Ay/Yıl seçimi...
+                YearSelect(s, arr[2], "#search-flight-datepicker-arrival .ui-datepicker-group-first .ui-datepicker-year");
+                MonthSelect(s, arr[1], "#search-flight-datepicker-arrival .ui-datepicker-group-first .ui-datepicker-month");
+                DaySelect(s, arr[0], "#search-flight-datepicker-arrival .ui-datepicker-group-first tbody a");
             }
 
         }
@@ -93,17 +94,17 @@ namespace SpecflowTutorial.Base
         public void YearSelect(string rightclick, string year, string xpath)
         {
             if (rightclick == "Gidiş Bileti")
-                DateYear(By.XPath(xpath), year, "//*[@id='search-flight-datepicker-departure']/div/div[2]/div/a");
+                DateYear(By.CssSelector(xpath), year, "#search-flight-datepicker-departure > div > div.ui-datepicker-group.ui-datepicker-group-last > div > a");
             else if (rightclick == "Dönüş Bileti")
-                DateYear(By.XPath(xpath), year, "//*[@id='search-flight-datepicker-arrival']/div/div[2]/div/a");
+                DateYear(By.CssSelector(xpath), year, "#search-flight-datepicker-arrival> div > div.ui-datepicker-group.ui-datepicker-group-last > div > a");
         }
 
         public void MonthSelect(string rightclick, string mounth, string xpath)
         {
             if (rightclick == "Gidiş Bileti")
-                DateMounth(By.XPath(xpath), mounth, "//*[@id='search-flight-datepicker-departure']/div/div[2]/div/a");
+                DateMounth(By.CssSelector(xpath), mounth, "#search-flight-datepicker-departure > div > div.ui-datepicker-group.ui-datepicker-group-last > div > a");
             else if (rightclick == "Dönüş Bileti")
-                DateMounth(By.XPath(xpath), mounth, "//*[@id='search-flight-datepicker-arrival']/div/div[2]/div/a");
+                DateMounth(By.CssSelector(xpath), mounth, "#search-flight-datepicker-arrival> div > div.ui-datepicker-group.ui-datepicker-group-last > div > a");
 
         }
 
@@ -114,34 +115,33 @@ namespace SpecflowTutorial.Base
 
 
 
-        public void DateYear(By by, string yearStr, string RightClick)
+        public void DateYear(By by, string inputYear, string RightClick)
         {
             string s;
             while (true)
             {
                 s = FindElement(by).Text;
-                if (s.Equals(yearStr))
+                if (s.Equals(inputYear))
                     break;
-                ClickElement(By.XPath(RightClick));
+                ClickElement(By.CssSelector(RightClick));
             }
         }
 
-        public void DateMounth(By by, string mounthStr, string RightClick)
+        public void DateMounth(By by, string inputMounth, string RightClick)
         {
             string s;
             while (true)
             {
                 s = FindElement(by).Text;
-                if (s.Equals(mounthStr))
+                if (s.Equals(inputMounth))
                     break;
-                ClickElement(By.XPath(RightClick));
-                //Thread.Sleep(5);
+                ClickElement(By.CssSelector(RightClick));
             }
         }
 
-        public void DateDay(string links, string day)
+        public void DateDay(string path, string day)
         {
-            result = driver.FindElements(By.XPath(links));
+            result = driver.FindElements(By.CssSelector(path));
 
             foreach (var item in result)
             {

@@ -103,150 +103,97 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
-  testRunner.And("\'//*[@id=\'fligth-searh\']/div[2]/div[1]/div/span/span[1]/span/span[2]\' objesine tı" +
-                        "klanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.nxm2_select-nereden .select2-selection--single\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 7
-  testRunner.And("\'select2-search__field\' objesine \'istanbul-S.Gökçen\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.select2-search__field\' objesine \'istanbul-S.Gökçen\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 8
-  testRunner.And("\'//*[@id=\'fligth-searh\']/div[2]/div[2]/div/span/span[1]/span/span[2]\' objesine tı" +
-                        "klanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.nxm2_select-nereye .select2-selection--single\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 9
-  testRunner.And("\'select2-search__field\' objesine \'Samsun\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.select2-search__field\' objesine \'Samsun\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 10
-  testRunner.And("\'//*[@id=\'fligth-searh\']/div[3]/div[1]/div/div[1]/span\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'#dp1\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 11
-  testRunner.And("\'Gidiş Bileti\' tarihi \'30.Mayıs.2020\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'Gidiş Bileti\' tarihi \'30/Mayıs/2020\' tarihine alınır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 12
-  testRunner.And("\'5\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'2\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 13
-  testRunner.And("\'Dönüş Bileti\' tarihi \'6.Haziran.2020\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'Dönüş Bileti\' tarihi \'6/Haziran/2020\' tarihine alınır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 14
-  testRunner.And("\'5\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'#fligth-searh .nxm2_btn-dark_orange\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 15
-  testRunner.And("\'//*[@id=\"fligth-searh\"]/div[3]/div[3]/div/div[1]\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.departure-list .availability-list-item-content\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 16
-  testRunner.And("\'//*[@id=\"fligth-searh\"]/div[3]/div[3]/div/div[2]/a\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'1\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 17
-  testRunner.And("\'//*[@id=\"fligth-searh\"]/div[3]/div[4]/div/button\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.departure-list .package-detail\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 18
-  testRunner.And("\'5\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'1\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 19
-  testRunner.And("\'//*[@id=\"boarding-card-body\"]/div[1]/div[3]/div[2]/div[2]/div[2]/div[1]/button/d" +
-                        "iv/div[1]/div[1]/div[3]/div[3]\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.return-list .availability-list-item-content\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 20
-  testRunner.And("\'//*[@id=\"boarding-card-body\"]/div[1]/div[3]/div[2]/div[2]/div[2]/div[1]/div/div[" +
-                        "2]/div[1]/button/div[2]/div/div/div\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'1\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 21
-  testRunner.And("\'//*[@id=\"boarding-card-body\"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/button/d" +
-                        "iv/div[1]/div[1]/div[3]/div[2]/div[1]\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.return-list .package-detail\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 22
-  testRunner.And("\'//*[@id=\"boarding-card-body\"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div/div[" +
-                        "2]/div[1]/button/div[2]/div/div/div\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.action-buttons .submit-button\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 23
-  testRunner.And("\'//*[@id=\"boarding-card-body\"]/div[1]/div[6]/div[2]/button[2]/div\' objesine tıkla" +
-                        "nır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.bundle-upgrade-modal-continue\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 24
-  testRunner.And("\'10\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'1\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 25
-  testRunner.And("\'/html/body/div[17]/div/div[1]/div/div/div/div/div[3]/div[4]/button[2]\' objesine " +
-                        "tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.passenger-info-form .name .text-input input\' objesine \'Cagatay\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 26
-  testRunner.And("\'3\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.passenger-info-form .surname .text-input input\' objesine \'Sahin\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 27
-  testRunner.And("\'/html/body/div[17]/div/div[1]/div/div/div/div/div[3]/div[4]/button[2]\' objesine " +
-                        "tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.passenger-birthday-wrapper .date-text-input div input\' objesine \'26\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 28
-  testRunner.And("\'3\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.passenger-birthday-wrapper .date-text-input div ~div input\' objesine \'07\' yazıl" +
+                        "ır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 29
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[1]/div/div/input\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.passenger-birthday-wrapper .date-text-input div ~div ~div input\' objesine \'1992" +
+                        "\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 30
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[1]/div/div/input\' objesine \'Cagatay\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.field-wrapper .gender div ~ div input\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 31
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[2]/div/div/label\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.phone-wrapper .number-container .tr-area input\' objesine \'222\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 32
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[2]/div/div/label\' objesine \'Sahin\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.phone-wrapper .number-container .phone-number input\' objesine \'2222222\' yazılır" +
+                        ".", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 33
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[3]/div[2]/div[1]/div[1]/div/div/label\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.tckn input\' objesine \'\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 34
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[3]/div[2]/div[1]/div[1]/div/div/label\' objesine \'27\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'.info-form-submit-button\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
 #line 35
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[3]/div[2]/div[1]/div[2]/div/div/label\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 36
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[3]/div[2]/div[1]/div[2]/div/div/label\' objesine \'07\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 37
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[3]/div[2]/div[1]/div[3]/div/div/label\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 38
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[3]/div[2]/div[1]/div[3]/div/div/label\' objesine \'1992\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 39
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[4]/div[2]/div/div[2]\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 40
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[5]/div[1]/div/div[3]/div[1]/div/div[2]/hr[2]\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 41
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[5]/div[1]/div/div[3]/div[1]/div/div[2]/hr[2]\' objesine \'\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 42
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[5]/div[1]/div/div[3]/div[2]/div/div[1]\' objesine \'\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 43
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[6]/div/div[2]/div/div/label\' objesine tıklanır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 44
-  testRunner.And("\'/html/body/div[2]/div/div[4]/div[2]/div/div[3]/div[2]/div[1]/div/div/form/div/di" +
-                        "v/div/div[6]/div/div[2]/div/div/label\' objesine \'\' yazılır.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
-#line hidden
-#line 45
-  testRunner.And("\'//*[@id=\"boarding-card-body\"]/div/div[3]/div[2]/div[4]/button/div\' objesine tıkl" +
-                        "anır..", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+  testRunner.And("\'3\' saniye süreyle beklenir.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
             }
             this.ScenarioCleanup();

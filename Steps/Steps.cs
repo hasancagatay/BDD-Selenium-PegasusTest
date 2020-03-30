@@ -58,7 +58,7 @@ namespace SpecflowTutorial
         public void ClickFromWhere(String obje)
         {
             log.Info("Parametre: " + obje);
-            basePage.ClickElement(By.XPath(obje));
+            basePage.ClickElement(By.CssSelector(obje));
         }
 
         [Given("'(.*)' id objesine tıklanır..")]
@@ -72,7 +72,7 @@ namespace SpecflowTutorial
         [Given("'(.*)' objesine '(.*)' yazılır.")]
         public void Send(string xpath, string value)
         {
-            basePage.SendKeys(By.ClassName(xpath), value);
+            basePage.SendKeys(By.CssSelector(xpath), value);
         }
 
         [Given("'(.*)' id objesine '(.*)' yazılır.")]
@@ -81,11 +81,11 @@ namespace SpecflowTutorial
             basePage.SendKeys(By.CssSelector(id), value);
         }
 
-        [Given("'(.*)' tarihi '(.*)'")]
+        [Given("'(.*)' tarihi '(.*)' tarihine alınır.")]
         public void GetDate(string s, string date)
         {
             // features da girilen tarih "." ile birbirinden ayrılıyor. Ve bir array e atanıyor...
-            string[] arr = date.Split(".");
+            string[] arr = date.Split("/");
 
             // . ile birbirinden ayrılan gün/ay/yıl arr parametresi ile DateSelect metoduna parametre olarak gönderiliyor...
             basePage.DateSelect(s, arr);
